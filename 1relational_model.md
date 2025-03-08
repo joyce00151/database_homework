@@ -13,17 +13,17 @@ depositor (ID, account_number)
 ### 1.1 找到位于成都市的支行的名字。
 ### 解答：
 ```sql
-π_branch_name(σ(branch_city='成都市')(branch))
+Π_branch_name(σ(branch_city='成都市')(branch))
 ```
 ### 1.2 找到在杨柳支行有贷款（loan）的借款人（borrower）的ID。
 ### 解答：
 ```sql
-π_ID(σ_branch_name='杨柳支行' (borrower ⨝ loan))
+Π_ID(σ_branch_name='杨柳支行' (borrower ⨝ loan))
 ```
 ```txt
 注：由于只有amount>0(有贷款行为）才会录入数据库，因此无需对这一条件进行限制
 即假设：数据库中只存储amount>0的贷款数据，因此可以省略amount>0的过滤条件
-在这一假设下，无需：π_ID(σ(branch_name='杨柳'∧amount>0) (borrower ⨝ loan))
+在这一假设下，无需：Π_ID(σ(branch_name='杨柳'∧amount>0) (borrower ⨝ loan))
 ```
 ## 题目二
 ```txt
