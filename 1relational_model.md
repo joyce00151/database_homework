@@ -1,4 +1,4 @@
-# homework 1
+# Homework 1
 ## 题目一
 ```txt
 考虑一个银行数据库，其关系模式如下所示：
@@ -18,7 +18,7 @@ depositor (ID, account_number)
 ### 1.2 找到在杨柳支行有贷款（loan）的借款人（borrower）的ID。
 ### 解答：
 ```sql
-π_ID(σ_branch_name='杨柳' (borrower ⨝ loan))
+π_ID(σ_branch_name='杨柳支行' (borrower ⨝ loan))
 ```
 ```txt
 注：由于只有amount>0(有贷款行为）才会录入数据库，因此无需对这一条件进行限制
