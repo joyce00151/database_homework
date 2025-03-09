@@ -12,18 +12,18 @@ depositor (ID, account_number)
 ```
 ### 1.1 找到位于成都市的支行的名字。
 ### 解答：
-![1.1](https://github.com/joyce00151/database_homework/blob/main/1.1.png?raw=true)
+![1.1](https://github.com/joyce00151/database_homework/blob/main/1images/1.1.png?raw=true)
 
 
 ### 1.2 找到在杨柳支行有贷款（loan）的借款人（borrower）的ID。
 ### 解答：
-![1.2.1](https://github.com/joyce00151/database_homework/blob/main/1.2.1.png?raw=true)
+![1.2.1](https://github.com/joyce00151/database_homework/blob/main/1images/1.2.1.png?raw=true)
 ```txt
 注：由于只有amount>0(有贷款行为）才会录入数据库，因此无需对这一条件进行限制
 即假设：数据库中只存储amount>0的贷款数据，因此可以省略amount>0的过滤条件
 在这一假设下，无需：
 ```
-![1.2.2](https://github.com/joyce00151/database_homework/blob/main/1.2.2.png?raw=true)
+![1.2.2](https://github.com/joyce00151/database_homework/blob/main/1images/1.2.2.png?raw=true)
 ## 题目二
 ```txt
 假设数据库中存储用户名和密码的关系模式是 users(name, pswd, gender)，
@@ -38,7 +38,7 @@ depositor (ID, account_number)
 将输入的用户名和密码分别赋值给'name'和'pswd'
 然后使用关系代数进行查询：
 ```
-![2](https://github.com/joyce00151/database_homework/blob/main/2.png?raw=true)
+![2](https://github.com/joyce00151/database_homework/blob/main/1images/2.png?raw=true)
 ```txt
 如果查询结果非空，则表示数据库中存在该用户名和密码的匹配记录，用户登录成功；
 如果查询结果返回为空集，则表示用户名或密码错误，登录失败。
