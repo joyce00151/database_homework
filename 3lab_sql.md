@@ -1,11 +1,36 @@
 # Homework 3
 ## 题目一
 需要使用PostgreSQL及DataGrip软件操作，并对操作页面及结果进行截图。
+
 1.新建一个university数据库，并执行largeRelationsInsertFile.sql，导入数据。
 ### 解答：
-*
-*
+* 新建university数据库
+
+![新建university数据库](1images/3/新建university数据库.png)
+* 连接university数据库
+
+![连接university数据库](1images/3/连接university数据库.png)
+* 导入largeRelationInsertFile.sql
+
+![导入largeRelationInsertFile.sql](1images/3/导入SQL.png)
+* 运行largeRelationInsertFile.sql
+
+![运行largeRelationInsertFile.sql](1images/3/运行largeRelationInsert.png)
+* 配置数据源
+
+![配置数据源](1images/3/配置数据源.png)
+* 结果
+
+![结果](1images/3/运行large结果.png) 
+
 2.运行第2次作业的题目三代码。注意：把原题目中的会计改成History。
+### 解答：
+* 新建Query Console后运行代码
+
+![运行代码](1images/3/运行第2次作业题目三代码.png)
+* 查询结果
+
+![查询结果](1images/3/第2次作业题目三结果.png)
 ## 题目二
 参考Pattern Matching，在PG中使用至少三种方法实现找到所有以S开头教师的名字。
 ### 解答：
@@ -40,12 +65,22 @@ FROM instructor
 WHERE SUBSTRING(name FROM 1 FOR 1) = 'S';
 ```
 ### 查询结果：
-插入图片
+![题目二查询结果](1images/3/题目二查询结果.png)
 ## 题目三
 psql是PostgreSQL的命令行工具。请使用psql命令行工具：
 - 实现题目二
-![3.1](https://github.com/joyce00151/database_homework/blob/main/1images/1.1.png?raw=true)
-以上显示了在psql命令行工具中操作方法1的结果，方法2-方法6同理，不再展示。
+
+![实现题目二](1images/3/实现题目二.png)
+
+首先切换到university数据库。以上显示了在psql命令行工具中操作方法1的结果，方法2-方法6同理，不再展示。
 - 列出所有的数据库
+
+![列出所有的数据库](1images/3/列出所有的数据库.png)
 - 列出当前数据库的所有表
+
+![列出当前数据库的所有表](1images/3/列出当前数据库的所有表.png)
 - 显示某张表的关系模式
+
+![查看某张表的关系模式](1images/3/查看某张表的关系模式.png)
+
+以instructor表为例，上图显示了instructor表的关系模式
